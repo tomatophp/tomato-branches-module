@@ -5,7 +5,7 @@ namespace Modules\TomatoBranches\App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
-use TomatoPHP\TomatoLocations\Models\Country;
+use Modules\TomatoLocations\App\Models\Country;
 
 /**
  * @property integer $id

@@ -3,8 +3,8 @@
 namespace Modules\TomatoBranches\App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use TomatoPHP\TomatoInvoices\Models\Invoice;
-use TomatoPHP\TomatoOrders\Models\Order;
+use Modules\TomatoInvoices\App\Models\Invoice;
+use Modules\TomatoOrders\App\Models\Order;
 
 /**
  * @property integer $id
