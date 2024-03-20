@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 use TomatoPHP\ConsoleHelpers\Traits\RunCommand;
 use Modules\TomatoBranches\App\Models\Branch;
 use Modules\TomatoBranches\App\Models\Company;
-use TomatoPHP\TomatoLocations\Models\Country;
+use Modules\TomatoLocations\App\Models\Country;
 
 class TomatoBranchesInstall extends Command
 {
@@ -62,7 +62,7 @@ class TomatoBranchesInstall extends Command
 
         $checkIfBranchExists = Branch::count();
         if($checkIfBranchExists < 1){
-            $branch = Branch::create([
+            Branch::create([
                 "name" => "Main",
                 'company_id' => $company->id,
                 'branch_number' => "001",
